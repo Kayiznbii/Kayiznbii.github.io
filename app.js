@@ -56,51 +56,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [
         {
             name: 'titus',
-            img: 'Images/titus.jpg'
+            img: './Images/titus.jpg'
         },
         {
             name: 'titus',
-            img: 'Images/titus.jpg'
+            img: './Images/titus.jpg'
         },
         {
             name: 'kibbs',
-            img: 'Images/kibbs.jpg'
+            img: './Images/kibbs.jpg'
         },
         {
             name: 'kibbs',
-            img: 'Images/kibbs.jpg'
+            img: './Images/kibbs.jpg'
         },
         {
             name: 'bumi',
-            img: 'Images/bumi.jpg'
+            img: './Images/bumi.jpg'
         },
         {
             name: 'bumi',
-            img: 'Images/bumi.jpg'
+            img: './Images/bumi.jpg'
         },
         {
             name: 'korok',
-            img: 'Images/korok.jpg'
+            img: './Images/korok.jpg'
         },
         {
             name: 'korok',
-            img: 'Images/korok.jpg'
+            img: './Images/korok.jpg'
         },
         {
             name: 'midna',
-            img: 'Images/midna.jpg'
+            img: './Images/midna.jpg'
         },
         {
             name: 'midna',
-            img: 'Images/midna.jpg'
+            img: './Images/midna.jpg'
         },
         {
             name: 'sidon',
-            img: 'Images/sidon.jpg'
+            img: './Images/sidon.jpg'
         },
         {
             name: 'sidon',
-            img: 'Images/sidon.jpg'
+            img: './Images/sidon.jpg'
         },
     ]
 
