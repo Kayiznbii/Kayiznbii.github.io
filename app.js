@@ -4,51 +4,51 @@ document.addEventListener('DOMContentLoaded', () => {
     /* const cardArray = [
         {
             name: "cheeseburger"
-            img: "images/cheeseburger.png"
+            img: "Images/cheeseburger.png"
         },
         {
             name: "cheeseburger"
-            img: "images/cheeseburger.png"
+            img: "Images/cheeseburger.png"
         },
         {
             name: "fries"
-            img: "images/fries.png"
+            img: "Images/fries.png"
         },
         {
             name: "fries"
-            img: "images/fries.png"
+            img: "Images/fries.png"
         },
         {
             name: "hotdog"
-            img: "images/hotdog.png"
+            img: "Images/hotdog.png"
         },
         {
             name: "hotdog"
-            img: "images/hotdog.png"
+            img: "Images/hotdog.png"
         },
         {
             name: "ice-cream"
-            img: "images/ice-cream.png"
+            img: "Images/ice-cream.png"
         },
         {
             name: "ice-cream"
-            img: "images/ice-cream.png"
+            img: "Images/ice-cream.png"
         },
         {
             name: "milkshake"
-            img: "images/milkshake.png"
+            img: "Images/milkshake.png"
         },
         {
             name: "milkshake"
-            img: "images/milkshake.png"
+            img: "Images/milkshake.png"
         },
         {
             name: "pizza"
-            img: "images/pizza.png"
+            img: "Images/pizza.png"
         },
         {
             name: "pizza"
-            img: "images/pizza.png"
+            img: "Images/pizza.png"
         },
     ] */
 
@@ -56,51 +56,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [
         {
             name: 'titus',
-            img: 'images/titus.jpg'
+            img: 'Images/titus.jpg'
         },
         {
             name: 'titus',
-            img: 'images/titus.jpg'
+            img: 'Images/titus.jpg'
         },
         {
             name: 'kibbs',
-            img: 'images/kibbs.jpg'
+            img: 'Images/kibbs.jpg'
         },
         {
             name: 'kibbs',
-            img: 'images/kibbs.jpg'
+            img: 'Images/kibbs.jpg'
         },
         {
             name: 'bumi',
-            img: 'images/bumi.jpg'
+            img: 'Images/bumi.jpg'
         },
         {
             name: 'bumi',
-            img: 'images/bumi.jpg'
+            img: 'Images/bumi.jpg'
         },
         {
             name: 'korok',
-            img: 'images/korok.jpg'
+            img: 'Images/korok.jpg'
         },
         {
             name: 'korok',
-            img: 'images/korok.jpg'
+            img: 'Images/korok.jpg'
         },
         {
             name: 'midna',
-            img: 'images/midna.jpg'
+            img: 'Images/midna.jpg'
         },
         {
             name: 'midna',
-            img: 'images/midna.jpg'
+            img: 'Images/midna.jpg'
         },
         {
             name: 'sidon',
-            img: 'images/sidon.jpg'
+            img: 'Images/sidon.jpg'
         },
         {
             name: 'sidon',
-            img: 'images/sidon.jpg'
+            img: 'Images/sidon.jpg'
         },
     ]
 
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             const card = document.createElement('img')
-            card.setAttribute('src', 'images/back.jpg')
+            card.setAttribute('src', 'Images/back.jpg')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -134,21 +134,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (optionOneId == optionTwoId) {
             //not in video, this sets up so player cannot make a match from clicking the same image twice
-            cards[optionOneId].setAttribute('src', 'images/back.jpg')
-            cards[optionTwoId].setAttribute('src', 'images/back.jpg')
+            cards[optionOneId].setAttribute('src', 'Images/back.jpg')
+            cards[optionTwoId].setAttribute('src', 'Images/back.jpg')
             alert('You have clicked the same image!')
         }
         else if (cardsChosen[0] === cardsChosen[1]) {
             alert('You found a match')
-            cards[optionOneId].setAttribute('src', 'images/white.png')
-            cards[optionTwoId].setAttribute('src', 'images/white.png')
+            cards[optionOneId].setAttribute('src', 'Images/white.png')
+            cards[optionTwoId].setAttribute('src', 'Images/white.png')
             cards[optionOneId].removeEventListener('click', flipCard)
             cards[optionTwoId].removeEventListener('click', flipCard)
             //stores two cards in cardsWon array
             cardsWon.push(cardsChosen)
         } else {
-            cards[optionOneId].setAttribute('src', 'images/back.jpg')
-            cards[optionTwoId].setAttribute('src', 'images/back.jpg')
+            cards[optionOneId].setAttribute('src', 'Images/back.jpg')
+            cards[optionTwoId].setAttribute('src', 'Images/back.jpg')
             alert('Sorry, try again')
         }
         cardsChosen = []
