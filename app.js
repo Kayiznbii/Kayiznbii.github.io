@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             const card = document.createElement('img')
-            card.setAttribute('src', './Images/back.jpg')
+            card.setAttribute('src', '../Images/back.jpg')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -134,8 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (optionOneId == optionTwoId) {
             //not in video, this sets up so player cannot make a match from clicking the same image twice
-            cards[optionOneId].setAttribute('src', './Images/back.jpg')
-            cards[optionTwoId].setAttribute('src', './Images/back.jpg')
+            cards[optionOneId].setAttribute('src', '../Images/back.jpg')
+            cards[optionTwoId].setAttribute('src', '../Images/back.jpg')
             alert('You have clicked the same image!')
         }
         else if (cardsChosen[0] === cardsChosen[1]) {
@@ -147,8 +147,8 @@ document.addEventListener('DOMContentLoaded', () => {
             //stores two cards in cardsWon array
             cardsWon.push(cardsChosen)
         } else {
-            cards[optionOneId].setAttribute('src', './Images/back.jpg')
-            cards[optionTwoId].setAttribute('src', './Images/back.jpg')
+            cards[optionOneId].setAttribute('src', '../Images/back.jpg')
+            cards[optionTwoId].setAttribute('src', '../Images/back.jpg')
             alert('Sorry, try again')
         }
         cardsChosen = []
