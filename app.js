@@ -140,8 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         else if (cardsChosen[0] === cardsChosen[1]) {
             alert('You found a match')
-            cards[optionOneId].setAttribute('src', './Images/white.png')
-            cards[optionTwoId].setAttribute('src', './Images/white.png')
+            cards[optionOneId].setAttribute('src', '../Images/white.png')
+            cards[optionTwoId].setAttribute('src', '../Images/white.png')
             cards[optionOneId].removeEventListener('click', flipCard)
             cards[optionTwoId].removeEventListener('click', flipCard)
             //stores two cards in cardsWon array
