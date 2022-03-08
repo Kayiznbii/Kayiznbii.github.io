@@ -117,7 +117,7 @@ p {
 }
 
 .mole {
-    background-image: url("Images/naviMole.jpg");
+    background-image: url("./Images/naviMole.jpg");
     background-size: cover;
 }
 
